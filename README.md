@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">🐾 UniversDog Mobile App</h1>
+<h1 align="center">🐾 UniversDog Mobile React Native</h1>
 
 <p align="center">
   <strong>Une application mobile moderne pour les amoureux des chiens</strong>
@@ -28,7 +28,7 @@ UniversDog Mobile est une application React Native conçue pour offrir une expé
 
 ## 🌟 Fonctionnalités
 
-- 🔐 Authentification sécurisée 
+- 🔐 Authentification sécurisée
 - 📅 Gestion avancée des rendez-vous
 - 🗺️ Intégration de cartes pour localiser les services
 - 📸 Prise et gestion de photos
@@ -37,37 +37,38 @@ UniversDog Mobile est une application React Native conçue pour offrir une expé
 
 ## 🛠 Spécifications techniques
 
-| Technologie          | Description                                      |
-|----------------------|--------------------------------------------------|
-| **Framework**        | React Native avec Expo                           |
-| **Version React**    | 18.2.0                                           |
-| **Navigation**       | React Navigation                                 |
-| **Gestion d'état**   | React Hooks                                      |
-| **Requêtes réseau**  | Axios                                            |
-| **Cartes**           | react-native-maps, react-native-maps-directions  |
-| **Authentification** | Jwt-decode, Bearer token                         |
-| **Stockage local**   | @react-native-async-storage/async-storage        |
-| **UI Components**    | React Native Elements                            |
-|----------------------|--------------------------------------------------|
+| Technologie          | Description                                  |
+| -------------------- | -------------------------------------------- |
+| **Framework**        | React Native avec Expo                       |
+| **Version React**    | 18.2.0                                       |
+| **Navigation**       | React Navigation                             |
+| **Gestion d'état**   | React Hooks                                  |
+| **Requêtes réseau**  | Axios                                        |
+| **Cartes**           | react-native-maps, react-native-leaflet-maps |
+| **Authentification** | Jwt-decode, Bearer token                     |
+| **Stockage local**   | @react-native-async-storage/async-storage    |
+| **UI Components**    | React Native Elements                        |
 
 ## 🚀 Installation
 
-[Expo](https://expo.dev) project créer avec [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Project créer avec : [Expo](https://expo.dev) [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/) sous Android Studio
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/) sous Xcode
 - [Expo Go](https://expo.dev/go)
 
 Vous pouvez commencer à développer en modifiant les fichiers dans le dossier **app**. Ce projet utilise [file-based routing](https://docs.expo.dev/router/introduction).
 
 1. Clonez le dépôt :
+
    ```bash
    git clone https://github.com/ACHGAR2024/Univerdog.site.mobile.git
    cd univerdog-mobile
    ```
 
 2. Installez les dépendances :
+
    ```bash
    npm install
    ```
@@ -84,6 +85,7 @@ npx expo start --android
 ```
 
 Vous pouvez alors ouvrir l'application sur :
+
 - Un émulateur Android
 - Un simulateur iOS
 - Votre appareil physique via l'application Expo Go
@@ -95,17 +97,18 @@ Lancez les tests avec :
 ```bash
 npm run lint
 ```
-Pour lancer la build  APK:
+
+Pour lancer la build APK:
 
 ```bash
 eas build -p android --profile preview
 ```
+
 Pour lancer la build IPA:
 
 ```bash
 eas build -p ios --profile preview
 ```
-
 
 ## 🤝 Contribution
 
