@@ -1,0 +1,6 @@
+app/auth/*
+app/context/*
+app/services/*
+app/dashboard/*
+*Context.js
+

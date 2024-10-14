@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "",
+    "slug": "",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Cette application a besoin d'accéder à votre emplacement pour afficher votre position actuelle sur la carte.",
+        "NSCameraUsageDescription": "Cette application nécessite l'accès à votre caméra pour prendre des photos.",
+        "NSPhotoLibraryUsageDescription": "Cette application nécessite l'accès à votre galerie pour sélectionner des photos."
+      }
+    },
+    "android": {
+      "package": "com.lgtv.univerdogmobile",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121212"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      },
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "L'application souhaite accéder à vos photos.",
+          "cameraPermission": "L'application souhaite accéder à votre caméra."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
